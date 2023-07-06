@@ -1,0 +1,74 @@
+
+/* 
+make background nice camel color and allign everything to the center horizontally and vertically 
+and make the height of the page 100% of the view port height
+also add fancy font with google fonts and make the font size 16px 
+*/
+body {
+  background-color: #e8e8e8;
+  text-align: center;
+  height: 100vh;
+  font-family: 'Lobster', cursive;
+  font-size: 16px;
+}
+
+/*
+make the header font size 50px and the color white
+*/
+header {
+  font-size: 50px;
+  color: white;
+}
+
+/* buttons for selecting sides should be very minimalistic nice looking */
+.select-button {
+  background-color: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 100px;
+  font-weight: lighter;
+  cursor: pointer;
+
+  /* text should be centered and have lighter color */
+  text-align: center;
+  color: #666;
+
+  /* make borders rounded */
+  border-radius: 10px;
+
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.select-button:hover .tooltip {
+  visibility: visible;
+}
+
+
+
+/* make borders of button lightly visible on hover */
+.select-button:hover {
+  border: 1px solid #d8d8d8;
+  /* make buttons look like they are pressed when clicked */
+  box-shadow: 0 2px #666;
+
+  /* change color to be more visible */
+  color: #333;
+}
